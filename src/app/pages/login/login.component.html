@@ -3,13 +3,13 @@
 <div class="area-form">
     <form>
         <h1 class="titulo">CRUD USERS</h1>
-        <h2 class="subtitulo">Mais eficiência no controle de usuários</h2>
+        <h2 class="subtitulo">More efficiency in user management</h2>
 
-        <input class="input-form" type="text" placeholder="Digite seu nome">
+        <input [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" class="input-form" type="text" placeholder="Digite seu nome">
 
-        <app-button buttonText="Acessar" size="100"></app-button>
+        <app-button buttonText="Acessar" size="100" (click)="login()"></app-button>
 
     </form>
 
-    <p class="footer">© 2025 | Desenvolvido por Mathias</p>
+    <p class="footer">© 2025 | Developed by Mathia</p>
 </div>
